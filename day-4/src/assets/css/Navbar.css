@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #a5d6a7; /* Light Green Background */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Softer shadow for a lighter look */
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    position: absolute;
+    left: 20px;
+    color: #004d40; /* Dark Teal text for high contrast */
+}
+
+.navbar button {
+    background-color: transparent;
+    color: #004d40; /* Dark Teal text */
+    border: 2px solid #004d40; /* Dark Teal border */
+    padding: 10px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 77, 64, 0.15); /* Light Green overlay */
+    transition: all 0.3s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.navbar button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.navbar button span {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar button:hover {
+    background-color: #b9fbc0; /* Very Light Green background */
+    color: #004d40; /* Dark Teal text */
+    transform: translateY(-2px);
+}
+
+.navbar button:active {
+    background-color: #d0f5e9; /* Even Lighter Green background */
+    color: #004d40; /* Dark Teal text */
+    transform: translateY(0);
+}
+
+.navbar button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)); /* Light gradient */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar button:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar button {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}

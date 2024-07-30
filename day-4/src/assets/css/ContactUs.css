@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7f1ff; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+.Contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the contact form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.Contact h1 {
+    text-align: center;
+    color: #66bb6a; /* Light green for header */
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.Contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #34495e; /* Dark gray for labels */
+    animation: slideInFromRight 1s ease-out;
+}
+
+.Contact input[type='text'],
+.Contact input[type='email'],
+.Contact textarea {
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    animation: zoomIn 1s ease-out;
+}
+
+.Contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.Contact input[type='text']:focus,
+.Contact input[type='email']:focus,
+.Contact textarea:focus {
+    border-color: #66bb6a; /* Light green on focus */
+}
+
+.Contact button {
+    background-color: #66bb6a; /* Light green for button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    animation: bounceIn 1s ease-out;
+}
+
+.Contact button:hover {
+    background-color: #58a75b; /* Slightly darker green on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

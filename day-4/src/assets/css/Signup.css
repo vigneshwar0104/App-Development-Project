@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7f9e7; /* Light green background */
+    margin: 0;
+    padding: 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start for better spacing */
+    margin-top: 50px; /* Reduced top margin */
+}
+
+.signup-container img {
+    width: 400px; /* Adjusted width for the image */
+    height: auto;
+    margin-right: 30px; /* Increased space between image and form */
+    border-radius: 5px;
+}
+
+.Signup {
+    width: 350px;
+    padding: 30px 25px;
+    background-color: #ffffff; /* White background for the signup box */
+    border: 1px solid #b2d8b2; /* Light green border */
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.Signup h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: black; /* Light green for header */
+}
+
+.Signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    color: black; /* Darker color for better readability */
+}
+
+.Signup input[type='text'],
+.Signup input[type='email'],
+.Signup input[type='password'] {
+    margin-top: 10px;
+    width: 100%; /* Full width for inputs */
+    height: 35px; /* Slightly increased height for inputs */
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #b2d8b2; /* Light green border */
+    border-radius: 5px;
+}
+
+.Signup input[type='submit'] {
+    background-color: #66bb6a; /* Light green for button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.Signup input[type='submit']:hover {
+    background-color: #58a75b; /* Slightly darker green on hover */
+}
+
+.Signup p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Signup p span {
+    color: #66bb6a; /* Light green for the login text */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.signup-container img {
+    width: 435px; /* Adjust this value to change the width */
+    height: auto; /* Keeps the aspect ratio */
+    margin-right: 30px; /* Spacing between image and form */
+    border-radius: 5px; /* Rounded corners */
+}

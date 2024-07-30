@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: 'Edu Australia VIC WA NT Hand';
+}
+
+body {
+    background-color: #e8f5e9; /* Light Green */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    opacity: 1;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.box1.Magic {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Footer {
+    margin-top: 100px;
+}
+
+.hero {
+    transition: 0.5s ease-in-out;
+    width: 80%;
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #c8e6c9; /* Lighter Green */
+    position: relative;
+    border-radius: 30px;
+}
+
+.hero:hover {
+    transform: scale(1.05);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding-left: 200px;
+    color: #2e7d32; /* Dark Green */
+}
+
+.hero-content p {
+    text-align: center;
+    padding-left: 120px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #004d40; /* Very Dark Green */
+}
+
+.join-now-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #66bb6a; /* Medium Light Green */
+    border: none;
+    color: #ffffff; /* White for visibility */
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 450px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.join-now-btn:hover {
+    background-color: #43a047; /* Darker Green on hover */
+}
+
+.member-info {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    color: #004d40; /* Very Dark Green for readability */
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.statistics div {
+    text-align: center;
+    color: #004d40; /* Very Dark Green for readability */
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #004d40; /* Very Dark Green for readability */
+}
+
+.testimonials cite {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    color: #004d40; /* Very Dark Green for contrast */
+}
+
+.hero-image img {
+    width: 300px;
+    height: 500px;
+    background-size: 100%;
+    margin-left: 50px;
+    animation: float 5s ease-in-out infinite;
+    border-radius: 15px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Other Sections */
+.piceven0 {
+    width: 30%;
+    height: 305px;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-image: url("C:/Users/K.K. Vigneshwar/Desktop/yoga-academy-1/src/assets/images/img7.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.piceven2 {
+    width: 30%;
+    height: 305px;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-image: url("C:/Users/K.K. Vigneshwar/Desktop/yoga-academy-1/src/assets/images/img10.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.texteven {
+    width: 60%;
+    height: 200px;
+    margin-top: -290px;
+    margin-left: 25%;
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: xx-large;
+    color: #b9fbc0; /* Dark Green */
+}
+
+.pheading {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    padding-left: 250px;
+    color: #e8f5e9; /* Dark Green */
+    font-size: 35px;
+}
+
+.picodd1 {
+    width: 30%;
+    height: 305px;
+    margin-top: 120px;
+    margin-left: 1110px;
+    background-image: url("C:/Users/K.K. Vigneshwar/Desktop/yoga-academy-1/src/assets/images/img9.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.picodd3 {
+    width: 30%;
+    height: 305px;
+    margin-top: 120px;
+    margin-left: 1120px;
+    background-image: url("C:/Users/K.K. Vigneshwar/Desktop/yoga-academy-1/src/assets/images/img8.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.textodd {
+    width: 60%;
+    height: 200px;
+    margin-top: -290px;
+    margin-left: -50px;
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: xx-large;
+    color: #b9fbc0; /* Dark Green */
+}
+
+.homebtn {
+    margin-top: 130px;
+    margin-left: 43%;
+    background: linear-gradient(145deg, #66bb6a, #4caf50); /* Gradient Green */
+    color: #ffffff; /* White for visibility */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Softer shadow for a subtle effect */
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+}
+
+.homebtn:hover {
+    background: linear-gradient(145deg, #4caf50, #66bb6a); /* Inverse Gradient Green */
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+.homebtn:active {
+    background: linear-gradient(145deg, #388e3c, #66bb6a); /* Darker Green on click */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Softer shadow on click */
+    transform: translateY(0); /* Return to original position */
+}

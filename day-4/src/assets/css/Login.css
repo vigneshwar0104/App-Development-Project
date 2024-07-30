@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: blanchedalmond;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust height based on header/footer */
+    margin: 0 auto;
+    /* border: 2px solid white; */
+}
+
+.login-container img {
+    width: 300px;
+    height: auto; /* Adjust this if necessary */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Login {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center contents vertically */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.Login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Login label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Login input[type='text'],
+.Login input[type='password'] {
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.Login button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.Login button:hover {
+    background-color: #45a049;
+}
+
+.Login p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Login p span {
+    color: green;
+    cursor: pointer;
+    text-decoration: underline;
+}
