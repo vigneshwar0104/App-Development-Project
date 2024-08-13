@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #9ad3a7; /* Slightly darker light green */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 2.8em;
+    color: #1e7b5f; /* Slightly darker green */
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 1.2em;
+    color: #5b8a72; /* Slightly darker light green */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-section {
+    background-color: #c5dcd2; /* Slightly darker very light green */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 1s ease-out;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.technique {
+    margin-bottom: 20px;
+}
+
+.technique h3 {
+    font-size: 1.4em;
+    color: #1e7b5f; /* Slightly darker green */
+}
+
+.technique p {
+    font-size: 1em;
+    color: #5b8a72; /* Slightly darker light green */
+}
+
+.vision-content,
+.mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vision-content img,
+.mission-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.vision-content p,
+.mission-content p {
+    font-size: 1.2em;
+    color: #1e7b5f; /* Slightly darker green */
+}
+
+.instructors-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.instructor-card {
+    width: 30%;
+    background-color: #d4e8e2; /* Slightly darker light green */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.instructor-card img {
+    width: 100%;
+    display: block;
+}
+
+.instructor-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.instructor-info h3 {
+    font-size: 1.4em;
+    color: #1e7b5f; /* Slightly darker green */
+    margin-bottom: 10px;
+}
+
+.instructor-info p {
+    font-size: 1em;
+    color: #5b8a72; /* Slightly darker light green */
+}
+
+.facilities-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.facility-card {
+    position: relative;
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.facility-card img {
+    width: 100%;
+    display: block;
+}
+
+.facility-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 123, 95, 0.7); /* Slightly darker semi-transparent dark green */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+}
+
+.facility-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    padding: 20px;
+    color: #c5dcd2;
+}
+
+.overlay-content h3 {
+    font-size: 1.4em;   
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 1em;
+}
